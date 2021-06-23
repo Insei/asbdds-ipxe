@@ -340,7 +340,7 @@ int image_exec ( struct image *image ) {
 
 	/* Switch current working directory to be that of the image itself */
 	old_cwuri = uri_get ( cwuri );
-	churi ( image->uri );
+	churi ( image->ouri );
 
 	/* Preserve record of any currently-running image */
 	saved_current_image = current_image;

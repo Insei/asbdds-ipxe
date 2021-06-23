@@ -78,6 +78,8 @@ int imgdownload ( struct uri *uri, unsigned long timeout,
 	if ( ! *image ) {
 		rc = -ENOMEM;
 		goto err_alloc_image;
+	} else {
+		(*image)->ouri = uri_dup( uri );
 	}
 
 	/* Create downloader */

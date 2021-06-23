@@ -30,6 +30,8 @@ struct image {
 
 	/** URI of image */
 	struct uri *uri;
+	/** original URI of image */
+	struct uri *ouri;
 	/** Name */
 	char *name;
 	/** Flags */
